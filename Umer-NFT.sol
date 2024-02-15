@@ -10,6 +10,7 @@ contract UmerNFT is ERC721, ERC721URIStorage, Ownable {
      uint256 public mintRate=0.001 ether;
     uint public MAXSUPPLY =1000;
      uint256 public tokenId ;
+     uint256 public totalSupply=0;
 
     constructor(address initialOwner)
         ERC721("Umer's Monkey NFT", "UNFT")
@@ -23,19 +24,20 @@ contract UmerNFT is ERC721, ERC721URIStorage, Ownable {
     function safeMint(address to, string memory uri) public payable  {
           require(msg.value >= mintRate,"Not enough ethers");
           tokenId = _nextTokenId++;
+          totalSupply++;
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
     }
 
     // The following functions are overrides required by Solidity.
 
-    function tokenURI(uint256 tokenId)
+    function tokenURI(uint256 tokenID)
         public
         view
         override(ERC721, ERC721URIStorage)
         returns (string memory)
     {
-        return super.tokenURI(tokenId);
+        return super.tokenURI(tokenID);
     }
 
     function supportsInterface(bytes4 interfaceId)
