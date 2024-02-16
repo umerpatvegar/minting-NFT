@@ -1,0 +1,169 @@
+
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/free-vector/abstract-realistic-technology-particle-background_52683-33063.jpg?w=740&t=st=1707630082~exp=1707630682~hmac=a74f6a26a7a6c6c33897255832d0356584f0836e15630c5aa4db6f2bd0448f0c');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+#heading{
+    text-align: center;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+        #logo-container {
+          margin-bottom: 20px; 
+		  margin-top: 20px;
+        }
+
+       #logo {
+         width: 200px; 
+          height: auto;
+        }
+		#container {
+    background-color: rgba(114, 247, 5, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+    margin-top: 20px;
+    max-width: 80%;
+}
+
+        #container p {
+            margin: 0;
+            padding: 5px 0;
+        }
+        #buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #fa0089;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2d09fa;
+        }
+        button.special {
+            background-color: #02fafa; 
+        }
+		#special-button {
+            display: none;
+            background-color: #ffa500; 
+            margin-top: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #special-button:hover {
+            background-color: #ff7f00; 
+        }
+		#success-message {
+            color: black;
+            margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+		#minted-nfts {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-top: 20px; 
+}
+#minted-nfts > div {
+    margin: 10px; 
+}
+@media (max-width: 768px) {
+    #container {
+        max-width: 90%; 
+    }
+}
+.minted-nfts {
+    text-align: center;
+}
+
+.minted-nfts-label {
+    margin-bottom: 20px;
+	display: block;
+    width: 100%; 
+}
+
+.minted-nfts-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%; 
+}
+
+.minted-nft-container {
+    margin: 10px;
+    text-align: center;
+}
+#supply{
+	font-size: 33px;
+	font-weight: 300;
+	color: black;
+	text-align: center;
+}
+#all-nfts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .nft-container {
+            margin: 10px;
+            text-align: center;
+            flex: 0 1 calc(20% - 20px); 
+            max-width: calc(20% - 20px); 
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .nft-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .nft-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .nft-container p {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+
+    
